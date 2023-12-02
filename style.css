@@ -1,0 +1,380 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    height: 70vh;
+    width: 100vw;
+    background-color: rgb(23, 23, 188);
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+    margin-left: 5em;
+    gap: 2em;
+}
+
+.email img {
+    height: 25px;
+}
+
+.phone img {
+    height: 25px;
+}
+
+.social-media img {
+    height: 25px;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.nav-bar>h1 {
+    margin-left: 2.3em;
+}
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    background-color: rgb(23, 23, 188);
+}
+
+.nav-bar {
+    color: rgb(231, 225, 225);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.nav-bar span {
+    color: orange;
+    font-weight: bold;
+}
+
+.nav-section select {
+    background-color: rgb(23, 23, 188);
+    color: aliceblue;
+    font-size: large;
+    margin-right: 1em;
+}
+
+.nav-section a {
+    color: rgb(204, 204, 204);
+    font-weight: lighter;
+    font-size: large;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+.nav-section a:hover {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.welcome-page {
+    display: flex;
+    margin-top: 3em;
+    justify-content: space-between;
+    margin-left: 2.2em;
+}
+
+.welcome-page>div {
+    color: white;
+    margin-left: 2em;
+    font-size: large;
+}
+
+.welcome-page>div>h1 {
+    color: rgb(255, 255, 255);
+    font-size: xx-larger;
+}
+
+.welcome-page>div>h1>span {
+    font-size: xx-large;
+}
+
+.start {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    font-size: larger;
+    margin-right: 1em;
+}
+
+.welcome-page>div>p {
+    color: rgb(200, 192, 192);
+}
+
+.start button {
+    background-color: rgb(114, 114, 243);
+    color: white;
+    font-size: large;
+    border-radius: 50px;
+    padding: 1em;
+    width: 200px;
+}
+
+.start div {
+    display: flex;
+    align-items: center;
+}
+
+.start img {
+    width: 35px;
+    height: 35px;
+    margin-right: 0.5em;
+}
+
+.image {
+    width: 100px;
+    margin-right: 45em;
+}
+
+
+
+.About {
+    height: 100%;
+    width: 100vw;
+    margin-left: 2.2em;
+}
+
+.About>h1 {
+    text-align: center;
+    text-decoration: underline rgb(0, 119, 255);
+}
+
+.About>P {
+    text-align: center;
+}
+
+.About2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5em;
+    margin-left: 2.2em;
+    margin-top: 2.5em;
+}
+
+.part-1>h1 {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.part-1 img {
+    width: 650px;
+    border-radius: 25px;
+}
+
+.part-2 img {
+    width: 500px;
+    border-radius: 25px;
+}
+
+.part-2 {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+.part-2>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.clients img {
+    height: 100px;
+    width: 100px;
+}
+
+.clients {
+    display: flex;
+    margin-left: 2.2em;
+    justify-content: space-evenly;
+}
+
+.client-response {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.client-text {
+    margin-top: 5em;
+}
+
+.client-text>div {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.client-text>div>span {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.client-text>div>p {
+    text-align: center;
+}
+
+.client-text>div>p>span {
+    font-weight: bold;
+    font-size: large;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.overlay-text {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    font-size: x-large;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;   
+}
+.overlay-text button{
+    font-size: large;
+    background-color: transparent;
+    color: white;
+    padding: 1em;
+    width: 10em;
+    border: solid;
+    border-color: white;
+    border-radius: 50px;
+}
+
+.call-to-action img {
+    margin-left: 2.2em;
+    margin-top: 2.5em;
+    border-radius: 50px;
+
+}
+
+.Services {
+    width: 100vw;
+    background-color: rgb(210, 208, 205);
+}
+.Services>h1{
+    padding-top: 1em;
+    text-align: center;
+}
+.Services>p{
+    text-align: center;
+    font-size: large;
+}
+.cards-container{
+    display: grid;
+    padding-top: 5em;
+    padding-left: 30em;
+    padding-right: 30em;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    background-color:rgb(210, 208, 205);
+    gap: 5em;
+}
+.cards{
+    background-color: white ;
+    height: 300px;
+    width: 400px;
+    padding: 1em;
+}
+.cards>h1{
+    text-align: center;
+}
+.cards>span{
+    font-size: large;
+    text-wrap: wrap;
+    gap: 5em;
+}
+.cards>a{
+    margin-top: 2em;
+}
+
+.Testimonials{
+    width: 100vw;
+}
+
+.Testimonials>h1{
+    text-align: center;
+    font-size: xx-large;
+
+}
+.Testimonials>p{
+    text-align: center;
+    font-size: large;
+}
+.testimony{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: turquoise 5em;
+}
+.cardstestimony{
+    border: 0.1em ;
+    margin-top: 2em;
+    padding: 4em;
+    height: 300px;
+    width: 400px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);    
+}
+
+.cardstestimony img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+}
+.img-name{
+    display: flex;
+    gap: 2em;
+}
+.comment{
+    font-size: large;
+    padding: 1em;
+}
+.contacts h1{
+    text-align: center;
+    margin-top: 2em;
+    font-size: xx-large;
+}
+
+.contacts>p{
+    text-align: center;
+}
+.contact-section{
+    display: flex;
+}
+.contact-details{
+    background-color: blue;
+    color: white;
+    border-radius: 20px 0 0 20px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+input[type="text"]
+i[type="email"]{
+    height:fit-content;
+    width:100px;
+}
+input[type="button"]{
+    background-color: blue;
+    width: 50px;
+}
