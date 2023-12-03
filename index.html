@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
+    <section class="contact-bar">
         <nav class="contact">
             <div class="details">
                 <div class="email">
@@ -27,22 +27,29 @@
                 <i class="fa-brands fa-linkedin" style="color: #f2f2f3;"></i>
             </div>
         </nav>
+    </section>
+
+
+
+    <header class="navigation">
         <nav class="nav-bar">
             <h1>LOREM_IMSUM <span>.</span></h1>
             <div class="nav-section">
-                <a href="#">Home</a>
+                <a href="#welcome-page">Home</a>
                 <a href="#About">About</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Team</a>
-                <a href="#">Blog</a>
-                <a href="#">Drop Down</a>
-                <a href="#">Contact</a>
+                <a href="#Services">Services</a>
+                <a href="#Portfolio">Portfolio</a>
+                <a href="#Team">Team</a>
+                <a href="#Blog">Blog</a>
+                <a href="#Drop Down">Drop Down</a>
+                <a href="#Contact">Contact</a>
             </div>
         </nav>
+        <!-- <i class="mobile-nav-toggle mobile-nav-show fa-solid fa-bars" ></i>
+        <i class="mobile-nav-toggle mobile-nav-hide fa-solid fa-xmark"></i> -->
     </header>
 
-    <section class="welcome-page">
+    <section class="welcome-page" id="welcome-page">
         <div class="welcome-page1">
             <div class="text-part">
                 <h1><span>Welcome to</span> <br>LOREM_IMSUM</h1>
@@ -60,22 +67,24 @@
             </div>
         </div>
         <section class="first-cards">
-            <div class="cards1">
-                <h1>Lorem ipsum</h1>
-            </div>
-            <div class="cards1">
-                <h1>Lorem ipsum</h1>
-            </div>
-            <div class="cards1">
-                <h1>Lorem ipsum</h1>
-            </div>
-            <div class="cards1">
-                <h1>Lorem ipsum</h1>
+            <div class="first-cards-container">
+                <div class="cards1">
+                    <h1>Lorem ipsum</h1>
+                </div>
+                <div class="cards1">
+                    <h1>Lorem ipsum</h1>
+                </div>
+                <div class="cards1">
+                    <h1>Lorem ipsum</h1>
+                </div>
+                <div class="cards1">
+                    <h1>Lorem ipsum</h1>
+                </div>
             </div>
         </section>
     </section>
 
-    <section class="About">
+    <section class="About" id="About">
         <h1><span>ABOUT US</span></h1>
         <p>Aperiam dolorum et et wuia molestias qui numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
         <div class="About2">
@@ -152,7 +161,7 @@
         </div> 
     </section>
 
-    <section class="Services">
+    <section class="Services" id="Services">
         <h1><span>OUR SERVICES</span></h1>
         <p>Donec in dui hendrerit sem scelerisque luctus. Ut cursus, sem vel condimentum ultricies, mi massa cursus ipsum, non hendrerit lacus quam ut est</p>
         <div class="cards-container">
@@ -220,35 +229,50 @@
             <div class="cardstestimony">
                 <div class="img-name">
                     <img src="images/testimonials/testimonials-4.jpg" alt="testimony-1">
-                    <h1>Matt Brandon</h1>
+                    <div>
+                        <h1>Matt Brandon</h1>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="comment">
-                    <p>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. Etiam sed lacus ac metus blandit tincidunt vel vel urna. Phasellus blandit turpis massa, sed lobortis ligula bibendum at. Nunc lobortis magna in orci ultricies iaculis.</p>
+                    <p><i class="fa-solid fa-quote-left" style="color: #009d8b;"></i>   Aliquam sit amet elit at felis lacinia egestas eget eu tellus. Etiam sed lacus ac metus blandit tincidunt vel vel urna. <i class="fa-solid fa-quote-right" style="color: #009d8b;"></i></p>
                 </div>
             </div>
             <div class="cardstestimony">
                 <div class="img-name">
                     <img src="images/testimonials/testimonials-5.jpg" alt="testimony-2">
-                    <h1>John Larson</h1>
+                    <div>
+                        <h1>John Larson</h1>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="comment">
-                    <p>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. Etiam sed lacus ac metus blandit tincidunt vel vel urna. Phasellus blandit turpis massa, sed lobortis ligula bibendum at. Nunc lobortis magna in orci ultricies iaculis.</p>
+                    <p><i class="fa-solid fa-quote-left" style="color: #009d8b;"></i>   Aliquam sit amet elit at felis lacinia egestas eget eu tellus. Etiam sed lacus ac metus blandit tincidunt vel vel urna. <i class="fa-solid fa-quote-right" style="color: #009d8b;"></i></p>
                 </div>
             </div>
             <div class="cardstestimony">
                 <div class="img-name">
                     <img src="images/testimonials/testimonials-1.jpg" alt="testimony-3">
-                    <h1>Saul Goodman</h1>
+                    <div>
+                        <h1>Saul Goodman</h1>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i><i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="comment">
-                    <p>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. Etiam sed lacus ac metus blandit tincidunt vel vel urna. Phasellus blandit turpis massa, sed lobortis ligula bibendum at. Nunc lobortis magna in orci ultricies iaculis.</p>
+                    <p><i class="fa-solid fa-quote-left" style="color: #009d8b;"></i>   Aliquam sit amet elit at felis lacinia egestas eget eu tellus. Etiam sed lacus ac metus blandit tincidunt vel vel urna. <i class="fa-solid fa-quote-right" style="color: #009d8b;"></i></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="Portfolio">
-        <h1>Portfolio</h1>
+    <section class="Portfolio" id="Portfolio">
+        <h1><span>Portfolio</span></h1>
         <p>Proin posuere eros nulla. In auctor, magna eu imperdiet dictum, purus mi rhoncus ligula, sit amet placerat neque nisi nec nisl. Aenean nec laoreet sem, id eleifend est.</p>
         <div class="link">
             <a href="">All</a>
@@ -345,8 +369,8 @@
         </div>
     </section>
 
-    <section class="Team">
-        <h1>Our Team</h1>
+    <section class="Team" id="Team">
+        <h1><span>Our Team</span></h1>
         <p>Nulla tincidunt iaculis dictum. Duis posuere vestibulum pulvinar. Vivamus id quam lorem. Nullam in convallis urna. Ut luctus nulla erat, in lobortis justo accumsan a. </p>
         <div class="team-container">
             <div class="team-member">
@@ -411,63 +435,92 @@
     </section>
 
     <section class="Pricing">
-        <h1>Pricing</h1>
-        <span>Proin vehicula consectetur augue eget scelerisque. Quisque orci neque, elementum a odio volutpat, malesuada lobortis massa.</span>
+        <h1><span>Pricing</span></h1>
+        <p>Proin vehicula consectetur augue eget scelerisque. Quisque orci neque, elementum a odio volutpat, malesuada lobortis massa.</p>
         <div class="price-container">
             <div class="pricing1">
                 <h2>Free Plan</h2>
-                <i class="fa-regular fa-cube" style="color: #fafafa;"></i>
+                <div class="icon"><i class="fa-solid fa-cube"></i></div>
+                
                 <span class="orange">$0</span><span>/month</span>
                 <div class="price-details">
                     <div>
-                        <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                        <i class="fa-solid fa-check"></i>
                         <span>Proin vehicula consectetur augue eget scelerisque. </span>
                     </div>
-                    
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
-                    <i class="fa-regular fa-x" style="color: #c7c7c7;"></i>
-                    <span class="overline">Mauris nisi orci, feugiat eu magna vitae,</span>
-                    <i class="fa-regular fa-x" style="color: #c7c7c7;"></i>
-                    <span class="overline">Mauris nisi orci, feugiat eu magna vitae,</span>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-x" style="color: #c7c7c7;"></i>
+                        <span class="overline">Mauris nisi orci, feugiat eu magna vitae,</span>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-x" style="color: #c7c7c7;"></i>
+                        <span class="overline">Mauris nisi orci, feugiat eu magna vitae,</span>
+                    </div>
                 </div>
-                <button>Buy Now</button>
+                <span class="button"><button>Buy Now</button></span>
+                
             </div>
-            <div class="pricing2">
+            <div class="pricing1 featured">
                 <h2>Business Plan</h2>
-                <i class="fa-regular fa-cube" style="color: #fafafa;"></i>
-                <span class="orange">$29</span><span>/month</span>
+                <div class="icon"><i class="fa-solid fa-plane-up"></i></div>
+                <h4><span class="orange">$29</span>/month</h4>
                 <div class="price-details">
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
                 </div>
                 <button>Buy Now</button>
             </div>
-            <div class="pricing3">
+            <div class="pricing1">
                 <h2>Developer Plan</h2>
-                <i class="fa-regular fa-cube" style="color: #fafafa;"></i>
+                <div class="icon"><i class="fa-regular fa-paper-plane"></i></div>
                 <span class="orange">$49</span><span>/month</span>
                 <div class="price-details">
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
-                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
-                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
                 </div>
                 <button>Buy Now</button>
             </div>
@@ -530,14 +583,92 @@
         </div>
     </section>
 
+    <section class="Blog">
+        <h1>Recent Blog Posts</h1>
+        <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio</p>
+        <div class="Blog-container">
+            <div class="blog-post">
+                <div class="post-img">
+                  <img src="images/blog/blog-1.jpg" alt="blog-1">
+                </div>
 
-    <section class="contacts">
+                <div class="post-text">
+                    <p>Politics</p>
+                <h2>
+                  Dolorum optio tempore voluptas dignissimos
+                </h2>
+                <div class="blog-author">
+                    <img src="images/blog/blog-author.jpg" alt="author-1">
+                    <div class="post">
+                        <p >Maria Doe</p>
+                        <p class="date">Jan 1, 2022</p>
+                    </div>
+                </div>
+                </div>
+
+                
+            </div>
+  
+            <div class="blog-post">
+  
+                <div class="post-img">
+                  <img src="images/blog/blog-2.jpg" alt="blog-2">
+                </div>
+
+                <div class="post-text">
+                    <p>Politics</p>
+  
+                <h2>
+                  Dolorum optio tempore voluptas dignissimos
+                </h2>
+  
+                <div class="blog-author">
+                    <img src="images/blog/blog-author-2.jpg" alt="author-2">
+                    <div class="post">
+                        <p >Allisa Mayer</p>
+                        <p class="date">Jun 5, 2022</p>
+                    </div>
+                </div>
+                </div>
+
+                
+            </div>
+  
+            <div class="blog-post">
+  
+                <div class="post-img">
+                  <img src="images/blog/blog-3.jpg" alt="blog-3">
+                </div>
+                <div class="post-text">
+                    <p>Politics</p>
+  
+                <h2>
+                  Dolorum optio tempore voluptas dignissimos
+                </h2>
+  
+                <div class="blog-author">
+                    <img src="images/blog/blog-author-3.jpg" alt="author-3">
+                    <div class="post">
+                        <p >Mark Dower</p>
+                        <p class="date">Jun 5, 2022</p>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+  
+        </div>
+
+    </section>
+  
+
+    <section class="contacts" id="Contact">
         <h1>Contact</h1>
         <p>Curabitur convallis dolor est, volutpat commodo lorem accumsan eget. Ut a ultricies erat. Donec vitae tortor accumsan, rhoncus lorem eget, blandit dolor.</p>
         <div class="contact-section"> 
             <div class="contact-details">
                 <div>
-                    <i class="fa-light fa-location-dot" style="color: white;"></i>
+                    <!-- <i class="fa-solid fa-location-dot"></i> -->
                     <div>
                         <h1>Location:</h1>
                         <p>A108 Adam Street, New York, NY 535022</p>
@@ -576,7 +707,7 @@
     </section>
     
     <!-- Completed CSS and HTML -->
-    <section class="more-links">
+    <footer class="more-links">
         <div class="more-links1">
             <div class="more-about">
                 <h1>LOREM_IMSUM</h1>
@@ -621,7 +752,7 @@
             <span>Copyright <span>LOREM_IMSUM</span>. All Rights Reserved</span>
             <span>Designed by rushil</span>
         </div>
-    </section>
+    </footer>
 
 </body>
 </html>
