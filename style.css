@@ -1,91 +1,94 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     box-sizing: border-box;
     margin: 0;
+    
 }
 
 header {
-    height: 70vh;
-    width: 100vw;
     background-color: rgb(23, 23, 188);
 }
 
 .contact{
     display: flex;
     justify-content: space-between;
+    padding: 1em 9.6em;
+    
 }
-
 .details {
     display: flex;
     margin-top: 1em;
     justify-content: center;
+    color: white;
     margin-left: 5em;
     gap: 2em;
+    opacity: 1em;
 }
 
-.email img {
-    height: 25px;
+.email .phone{
+    gap: 0.5em;
 }
-
-.phone img {
-    height: 25px;
-}
-
-.social-media img {
-    height: 25px;
-    margin-top: 1em;
-    margin-right: 1em;
-}
-
-.nav-bar>h1 {
-    margin-left: 2.3em;
-}
-
-.nav-bar {
-    position: sticky;
-    top: 0;
-    background-color: rgb(23, 23, 188);
-}
-
-.nav-bar {
-    color: rgb(231, 225, 225);
+.social-media{
     display: flex;
+    gap: 1.5em;
+}
+.social-media i{
+    font-size: x-large;
+    opacity: 0.9;
+}
+.nav-bar {
+    padding: 1em 15em 1em 7em;
+    overflow: hidden;
+    display: flex;
+    color: white;
+    font-size: xx-large;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em;
+    position:sticky;
+    top: 0;
+    width: 90%;
 }
-
 .nav-bar span {
     color: orange;
     font-weight: bold;
 }
-
-.nav-section select {
-    background-color: rgb(23, 23, 188);
-    color: aliceblue;
-    font-size: large;
-    margin-right: 1em;
-}
-
-.nav-section a {
-    color: rgb(204, 204, 204);
-    font-weight: lighter;
-    font-size: large;
-    text-decoration: none;
-    margin-right: 1em;
-}
-
-.nav-section a:hover {
-    color: aliceblue;
-    font-weight: bold;
-}
-
-.welcome-page {
+.nav-section{
     display: flex;
-    margin-top: 3em;
-    justify-content: space-between;
-    margin-left: 2.2em;
+    gap: 1em;
+    padding-right:10em;
 }
+.nav-section a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    opacity: 0.8;
+}
+.nav-section a:hover{
+    opacity: 1.2;
+    transform: scale(1.1);
+    border-bottom: solid;
+}
+.welcome-page{
+    background-color:rgb(23, 23, 188);
+    padding: 2em 12em 11.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 60vh;
 
+}
+.welcome-page1{
+    display: flex;
+    margin-bottom: 3em;
+}
+.text-part>p{
+    font-size: x-large;
+}
+.text-part>h1{
+    font-size: 70px;
+    font-weight: bolder;
+}
 .welcome-page>div {
     color: white;
     margin-left: 2em;
@@ -94,16 +97,21 @@ header {
 
 .welcome-page>div>h1 {
     color: rgb(255, 255, 255);
-    font-size: xx-larger;
 }
 
 .welcome-page>div>h1>span {
     font-size: xx-large;
 }
-
+.image {
+    width: 100px;
+    overflow: hidden;
+    padding-right:55em;
+    padding-left: 12em;
+}
 .start {
     display: flex;
     gap: 3em;
+    padding: 1em;
     align-items: center;
     font-size: larger;
     margin-right: 1em;
@@ -114,9 +122,10 @@ header {
 }
 
 .start button {
-    background-color: rgb(114, 114, 243);
+    background-color:transparent;
     color: white;
     font-size: large;
+    font-weight: bold;
     border-radius: 50px;
     padding: 1em;
     width: 200px;
@@ -127,32 +136,55 @@ header {
     align-items: center;
 }
 
-.start img {
-    width: 35px;
-    height: 35px;
-    margin-right: 0.5em;
+.start i{
+    font-size: xx-large;
+    gap: 2em;
+}
+.start>div>span{
+    margin-left: 0.6em;
+    font-size: x-large;
+    font-weight: bold;
 }
 
-.image {
-    width: 100px;
-    margin-right: 45em;
+
+.first-cards{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5em;
+    /* height: 10vh;
+    background-color: rgb(23, 23, 188); */
 }
-
-
+.cards1{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(23, 23, 188);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.324);
+}
+.cards1:hover{
+    transform: scale(1.2);
+    background-color: rgb(0, 247, 255);
+}
 
 .About {
-    height: 100%;
-    width: 100vw;
     margin-left: 2.2em;
+    margin-top: 15em;
+    padding-left: 7em;
 }
-
-.About>h1 {
+.About>h1{
     text-align: center;
-    text-decoration: underline rgb(0, 119, 255);
+    font-size: xx-large;
 }
-
-.About>P {
+.About>h1 >span{
+    border-bottom: 5px solid #000;
+}
+.About>p{
     text-align: center;
+    font-size: x-large;
 }
 
 .About2 {
@@ -163,52 +195,74 @@ header {
     margin-top: 2.5em;
 }
 
-.part-1>h1 {
-    font-size: large;
+.part-1>h1{
+    font-size: xx-large;
     font-weight: bolder;
 }
 
 .part-1 img {
-    width: 650px;
+    width: 1000px;
     border-radius: 25px;
 }
-
 .part-2 img {
-    width: 500px;
+    width: fit-content;
+    height: 70%;
     border-radius: 25px;
 }
-
-.part-2 {
+.part-2{
     display: flex;
     flex-direction: column;
+    font-size: x-large;
+}
+.check-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+.check-text>div{
+    display: flex;
+    gap: 0.8em;
+    justify-content:flex-start;
+}
+.part-2>div>i{
     font-size: large;
 }
-
-.part-2>div {
+.para1{
+    font-size: x-large;
+}
+.para2{
+    font-size: x-large;
+}
+.img-para{
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
 }
+
 
 .clients img {
     height: 100px;
-    width: 100px;
+    width: 200px;
 }
-
 .clients {
     display: flex;
-    margin-left: 2.2em;
     justify-content: space-evenly;
 }
-
-.client-response {
-    margin-top: 5em;
+.client-response{
+    padding: 7rem 16rem;
+}
+.client-response1 img{
+    width: 500x;
+    height: 500px;
+}
+.client-response1{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-
 .client-text {
     margin-top: 5em;
+    padding: 3em 15em 0 0;
 }
 
 .client-text>div {
@@ -220,7 +274,7 @@ header {
 .client-text>div>span {
     color: darkblue;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 60px;
 }
 
 .client-text>div>p {
@@ -229,9 +283,11 @@ header {
 
 .client-text>div>p>span {
     font-weight: bold;
+    font-size: xx-large;
+}
+.client-text>div>p{
     font-size: large;
 }
-
 .call-to-action {
     display: flex;
     justify-content: center;
@@ -263,49 +319,68 @@ header {
 .call-to-action img {
     margin-left: 2.2em;
     margin-top: 2.5em;
+    width: 95%;
     border-radius: 50px;
-
 }
 
-.Services {
-    width: 100vw;
-    background-color: rgb(210, 208, 205);
+.Services{
+    height: 1200px;
+    background-color: rgba(210, 208, 205, 0.348);
 }
 .Services>h1{
-    padding-top: 1em;
+    padding-top: 2em;
+    font-size: xx-large;
+    font-weight: bolder;
     text-align: center;
+    
+}
+.Services>h1 span{
+    border-bottom:solid gray;
 }
 .Services>p{
     text-align: center;
-    font-size: large;
+    font-size: x-large;
 }
 .cards-container{
     display: grid;
-    padding-top: 5em;
-    padding-left: 30em;
-    padding-right: 30em;
+    padding: 5em 5em 0 15em;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    background-color:rgb(210, 208, 205);
+    grid-template-rows: repeat(2,1fr);
     gap: 5em;
 }
 .cards{
     background-color: white ;
     height: 300px;
     width: 400px;
-    padding: 1em;
+    padding: 2em;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.576);
 }
-.cards>h1{
-    text-align: center;
+.cards i{
+    font-size:50px;
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.293);
+    border-radius: 25px;
 }
-.cards>span{
+.cards>h1 span{
+    border-bottom: solid rgba(128, 128, 128, 0.32);
+    border-radius:5px;
+}
+
+.cards>div span{
     font-size: large;
     text-wrap: wrap;
-    gap: 5em;
 }
-.cards>a{
-    margin-top: 2em;
+.cards>div a{
+    text-decoration: none;
+    color: blue;
+    font-size:large;
 }
+.cards a:hover{
+    transform: scale(2);
+    color: darkblue;
+    font-size: x-large;
+}
+
 
 .Testimonials{
     width: 100vw;
@@ -314,11 +389,10 @@ header {
 .Testimonials>h1{
     text-align: center;
     font-size: xx-large;
-
 }
 .Testimonials>p{
     text-align: center;
-    font-size: large;
+    font-size: x-large;
 }
 .testimony{
     display: flex;
@@ -330,10 +404,12 @@ header {
     margin-top: 2em;
     padding: 4em;
     height: 300px;
-    width: 400px;
+    width: 300px;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);    
 }
-
+.cardstestimony:hover{
+    transform: scale(1.1);
+}
 .cardstestimony img{
     height: 75px;
     width: 75px;
@@ -347,34 +423,352 @@ header {
     font-size: large;
     padding: 1em;
 }
+.Portfolio>h1{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 50px;
+}
+.Portfolio{
+    background-color: rgba(210, 208, 205, 0.348);
+}
+.Portfolio>p{
+    text-align: center;
+    font-size: x-large;
+}
+.link{
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+.link a{
+    text-decoration: none;
+    font-size: x-large;
+    opacity: 0.8;
+    font-weight: bold;
+    margin-right:3em;
+    color: black;
+}
+.product-container{
+    display: grid;
+    padding: 2em 5em 4em 16em;
+    gap: 3em;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.products{
+    margin-top: 0;
+    width: 500px;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.products>div{
+    padding: 1em;
+    overflow: hidden;
+}
+.products img{
+    height: 350px;
+    width: 500px;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.229);
+    margin-bottom: 0;
+    transition: transform 0.4s ease;
+}
+.products img:hover{
+    transform: scale(1.1);
+}
+.Team{
+    background-color:white;
+}
+.Team>h1{
+    text-align: center;
+    font-size: xx-large;
+}
+.Team p{
+    font-size: x-large;
+    text-align: center;
+}
+
+.team-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+    padding: 2em 3em 2em 4em;
+}
+.team-member{
+    padding: 1em ;
+    height: 550px;
+    border-radius: 10px;
+    background-color: rgba(235, 232, 232, 0.433);
+}
+.team-member>img{
+    height: 350px;
+    width: 350px;
+    border-radius: 15px;
+}
+.member-details{
+    text-align: center;
+}
+.member-details>h1{
+    margin-bottom: 0.5em;
+
+}
+.member-details>span{
+    color: rgb(103, 99, 99);
+}
+.social-links{
+    margin-top:1em;
+    display: flex;
+    gap: 2em;
+    font-size: x-large;
+}
+.social-links i{
+    border-radius: 50px;
+    border:gray 0.01em;
+    border-style: solid;
+    padding: 0.5em;
+    color: gray;
+}
+.social-links i:hover{
+    cursor:pointer;
+    border:darkblue solid 0.01em;
+    color: darkblue;
+    transition: 0.3s ease;
+}
+
+.Pricing{
+    padding: 2em;
+    height: 80vh;
+    background-color: rgba(210, 208, 205, 0.348);
+}
+.Pricing>h1{
+    text-align: center;
+    font-size: 50px;
+}
+.Pricing>span{
+    font-size: x-large;
+    text-align: center;
+}
+.price-container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.price-container h2{
+    text-align: center;
+    font-size: xx-large;
+}
+.orange{
+    font-size: 50px;
+    color: rgb(255, 42, 0);
+}
+.price-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.price-details>i{
+    font-size: x-large;
+}
+
+.Questions{
+    display: flex;
+    padding: 3em 2em 2em 6em;
+    justify-content: center;
+    gap: 10em;
+    margin-top: 2em;
+}
+.Questions>div>h1{
+    font-size: xx-large;
+}
+.Questions>div>h1>span{
+    font-size: 50px;
+}
+.Questions p{
+    font-size: x-large;
+}
+.question-content{
+    font-size: x-large;
+    height: 75px;
+    width: 100%;
+    background-color: white;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-content: space-between;
+}
+.question-content>button{
+    height: 75px;
+    width: 100%;
+    background-color: white;
+    font-size: x-large;
+    box-shadow: 10px 10px 10px gray;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between; 
+}
+.question-content>button>div>span{
+    color: rgb(18, 18, 112);
+    font-weight: bold;
+}
+.answer{
+    display: none;
+    overflow: hidden;
+    padding: 0;
+}
+.question-content i:hover{
+    .answer{
+        display: block;
+    }
+}
+.contacts{
+    margin-top: 2em;
+}
 .contacts h1{
     text-align: center;
     margin-top: 2em;
-    font-size: xx-large;
+    font-size: 50px;
 }
 
 .contacts>p{
     text-align: center;
+    font-size: x-large;
 }
 .contact-section{
     display: flex;
+    border-radius: 25px;
+    padding: 2em 8em 2em 8em;
+    width: 100%;
 }
 .contact-details{
     background-color: blue;
     color: white;
     border-radius: 20px 0 0 20px;
+    height:600px;
+    padding: 5em 2em 2em 2em;
+    font-size: large;
+    overflow: hidden;
+}
+.contact-details>div>div>h1{
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+}
+.contact-details>div{
+    display: flex;
+    justify-content: center;
+}
+.contact-details>div>p{
+    font-size: large;
+    overflow: hidden;
+    text-align: center;
+}
+.contact-details>div>i{
+    font-size: x-large;
+    color: white;
 }
 .contact-form{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
     display: flex;
+    border-radius: 0  30px 30px 0;
+    background-color: white;
+    width: 50%;
+    padding: 2em;
     flex-direction: column;
-    height: 700px;
+    gap: 1rem;
 }
-input[type="text"]
-i[type="email"]{
-    height:fit-content;
-    width:100px;
+
+.contact-form input{
+    height: 60px;
+    width: 550px;
+}
+.contact-form>div input{
+    margin-right: 1em;
+}
+.contact-form>input{
+    width: 1124px;
+}
+textarea{
+    width: 1124px;
 }
 input[type="button"]{
-    background-color: blue;
-    width: 50px;
+    background-color: darkblue;
+    color: white;
+    width: 300px;
+    font-size: large;
+    border-radius: 50px;
+}
+.more-about h1{
+    font-size: xx-large;
+}
+.more-about p{
+    font-size: large;
+}
+
+.more-links{
+    background-color:rgb(23, 23, 188);
+    padding: 5em;
+}
+.more-links1{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+.useful-links{
+    display: flex;
+    flex-direction: column;
+}
+.useful-links>div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.more-services{
+    display: flex;
+    flex-direction: column;
+}
+.more-services>div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.more-contact{
+    display: flex;
+    flex-direction: column;
+}
+.more-contact>div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.copyrights{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+    color: white;
+    margin-top: 5em;
+}
+.more-links1{
+    font-size: large;
+}
+.copyrights>span>span{
+    font-weight: bold;
+    font-size: large;
+}
+.icons{
+    margin-top:2em;
+    display: flex;
+    gap: 2em;
+    font-size: x-large;
+}
+.icons i{
+    border-radius: 50px;
+    border: white 0.01em;
+    border-style: solid;
+    padding: 0.5em;
 }
