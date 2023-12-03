@@ -5,110 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="contact">
             <div class="details">
                 <div class="email">
-                    <img src="https://t4.ftcdn.net/jpg/00/98/26/11/360_F_98261159_Po5JS7ds82XaePJIsG1MiEtHRzOeUPNj.jpg" alt="message-icon">
+                    <i class="fa-regular fa-envelope" style="color: #fafafa;"></i>
                     <span>contact@example.com</span>
                 </div>
                 <div class="phone">
-                    <img src="https://fontawesome.com/icons/mobile?f=classic&s=solid&pc=%23edeff3" alt="phone-icon">
+                    <i class="fa-solid fa-mobile-button" style="color: #f1f2f3;"></i>
                     <span>+1 5589 55488 55</span>
                 </div>
             </div>
             <div class="social-media">
-                <img src="https://cdn.icon-icons.com/icons2/622/PNG/512/twitter-logo_icon-icons.com_57059.png" alt="twitter-logo">
-                <img src="data:image/png;base64,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" alt="facebook-logo">
-                <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png" alt="instagram-logo">
-                <img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kMi0xMC5wbmc.png" alt="linkedin-logo">
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook" style="color: #fcfcfc;"></i>
+                <i class="fa-brands fa-instagram" style="color: #fcfcfd;"></i>
+                <i class="fa-brands fa-linkedin" style="color: #f2f2f3;"></i>
             </div>
         </nav>
         <nav class="nav-bar">
             <h1>LOREM_IMSUM <span>.</span></h1>
             <div class="nav-section">
                 <a href="#">Home</a>
-                <a href="#">About</a>
+                <a href="#About">About</a>
                 <a href="#">Services</a>
                 <a href="#">Portfolio</a>
                 <a href="#">Team</a>
                 <a href="#">Blog</a>
-                <select name="Drop-down" id="dropdown">
-                    <option value="">Drop Down</option>
-                </select>
+                <a href="#">Drop Down</a>
                 <a href="#">Contact</a>
             </div>
         </nav>
-
-        <section>
-            <div class="welcome-page">
-                <div class="text-part">
-                    <h1><span>Welcome to</span> <br>LOREM_IMSUM</h1>
-                    <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum <br>quas beatae cumque eum quareat</p>
-                    <div class="start">
-                            <button>Get Started</button>
-                            <div>
-                                <img src="https://static.vecteezy.com/system/resources/thumbnails/001/505/014/small/video-player-icon-free-vector.jpg" alt="watch-icon">
-                                <span>Watch Video</span>
-                            </div>
-                    </div>
-                </div> 
-                <div class="image">
-                    <img src="./images/stats-img.svg" alt="stats-logo">
-                </div>
-            </div>
-        </section>
     </header>
 
+    <section class="welcome-page">
+        <div class="welcome-page1">
+            <div class="text-part">
+                <h1><span>Welcome to</span> <br>LOREM_IMSUM</h1>
+                <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quareat</p>
+                <div class="start">
+                        <button>Get Started</button>
+                        <div>
+                            <i class="fa-regular fa-circle-play" style="color:white;"></i>
+                            <span>Watch Video</span>
+                        </div>
+                </div>
+            </div> 
+            <div class="image">
+                <img src="./images/stats-img.svg" alt="stats-logo">
+            </div>
+        </div>
+        <section class="first-cards">
+            <div class="cards1">
+                <h1>Lorem ipsum</h1>
+            </div>
+            <div class="cards1">
+                <h1>Lorem ipsum</h1>
+            </div>
+            <div class="cards1">
+                <h1>Lorem ipsum</h1>
+            </div>
+            <div class="cards1">
+                <h1>Lorem ipsum</h1>
+            </div>
+        </section>
+    </section>
+
     <section class="About">
-        <h1>ABOUT US</h1>
+        <h1><span>ABOUT US</span></h1>
         <p>Aperiam dolorum et et wuia molestias qui numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
         <div class="About2">
             <div class="part-1">
-                <h1>Voluptatem dignissimos provident quasi <br>corporis</h1>
+                <h1>Voluptatem dignissimos provident quasi corporis. Ut a ultricies erat,<br> ultrices nunc.</h1>
                 <img src="images/about.jpg" alt="about-1">
                 <p class="para1">Fusce ac pharetra justo. Aliquam ultrices viverra tincidunt. Quisque porttitor faucibus dui, vel dictum nisl <br>tincidunt et. Aenean ac pharetra arcu. Praesent varius odio nec nisl congue, sit amet sagittis turpis tempus. <br> Cras arcu nunc, dignissim vel velit sed, porta gravida lectus. Maecenas hendrerit mi at odio eleifend tincidunt.</p>
                 <p class="para2">Donec in dui hendrerit sem scelerisque luctus. Ut cursus, sem vel condimentum ultricies, mi massa cursus ipsum, <br> non hendrerit lacus quam ut est. Quisque venenatis pharetra est, in luctus odio tempus non. Donec sollicitudin <br> dignissim metus venenatis ornare. Integer molestie urna eget sem aliquet, sed tincidunt erat venenatis.</p>
             </div>
             <div class="part-2">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor dolor <br> et nunc facilisis placerat.</p>
-                <ul>
-                    <li>Quisque at condimentum felis, consequat dapibus urna. </li>
-                    <li>Phasellus sed enim non nibh suscipit ultricies. Ut porta <br>vitae felis at porta. Aenean lobortis convallis ex.</li>
-                    <li>Quisque quis tellus urna. Pellentesque sed orci dignissim, ultrices <br>justo vel, blandit enim. Vivamus sed ornare quam, et luctus lacus. Vestibulum id dictum nulla. <br>Vestibulum porta blandit felis sed volutpat. </li>
-                </ul>
-                <div>
-                    <span>Quisque posuere lacus enim, nec laoreet augue varius eu. Integer ornare imperdiet tellus, sit amet <br>vulputate orci suscipit sagittis. Pellentesque suscipit neque at vehicula. <br> Fusce consectetur lobortis ligula dignissim efficitur. Nunc efficitur est ut arcu inter. </span>
+                <div class="check-text">
+                    <div>
+                        <i class="fa-solid fa-circle-check" style="color: #1f3d6f;"></i>
+                        <span>Quisque at condimentum felis, consequat dapibus urna.</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-check" style="color: #1f3d6f;"></i>
+                        <span>Phasellus sed enim non nibh suscipit ultricies. Ut porta <br>vitae felis at porta. Aenean lobortis convallis ex.</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-check" style="color: #1f3d6f;"></i>
+                        <span>Quisque quis tellus urna. Pellentesque sed orci dignissim, ultrices justo vel, blandit. <br> Vivamus sed ornare quam, et luctus lacus. Vestibulum id dictum nulla. <br>Vestibulum porta blandit felis sed volutpat.</span>
+                    </div>
+                </div>
+                <div class="img-para">
+                    <span>Quisque posuere lacus enim, nec laoreet augue varius eu. Integer ornare imperdiet tellus, <br>sit amet vulputate orci suscipit sagittis. Pellentesque suscipit neque at vehicula. <br> Fusce consectetur lobortis ligula dignissim efficitur. Nunc efficitur est ut arcu inter. </span>
                     <img src="images/about-2.jpg" alt="about-2">
+                    <!-- <div class="overlay-play">
+                        <i class="fa-solid fa-circle-play" style="color: #194694;"></i>
+                    </div> -->
                 </div>
             </div>
         </div>
         <div class="clients">
-            <img src="images/client-2.png" alt="belimo">
-            <img src="images/client-3.png" alt="lifegroups">
-            <img src="images/client-4.png" alt="lilly">
-            <img src="images/client-5.png" alt="citrus">
-            <img src="images/client-6.png" alt="Trustly">
-            <img src="images/client-7.png" alt="oldendorff">
+            <img src="images/clients/client-2.png" alt="belimo" >
+            <img src="images/clients/client-3.png" alt="lifegroups">
+            <img src="images/clients/client-4.png" alt="lilly">
+            <img src="images/clients/client-5.png" alt="citrus">
+            <img src="images/clients/client-6.png" alt="Trustly">
+            <img src="images/clients/client-7.png" alt="oldendorff">
         </div>
-        <div class="client-response">
+    </section>
+    
+    <section class="client-response">
+        <div class="client-response1">
             <img src="images/hero-img.svg" alt="hero-img">
             <div class="client-text">
                 <div>
                     <span>232</span>
-                    <p><span>Happy Clients</span> nisi sem convallis massa</p>
+                    <p><span>Happy Clients</span> nisi sem convallis massa nisi sem convallis massa</p>
                 </div>
                 <hr>
                 <div>
                     <span>521</span>
-                    <p><span>Projects</span> nisi sem convallis massa</p>
+                    <p><span>Projects</span> nisi sem convallis massa nisi sem convallis massa</p>
                 </div>
                 <hr>
                 <div>
                     <span>453</span>
-                    <p><span>Hours Of Support</span> nisi sem convallis massa</p>
+                    <p><span>Hours Of Support</span> nisi sem convallis massa nisi sem convallis massa</p>
                 </div>
                 <hr>
             </div>
@@ -125,50 +153,62 @@
     </section>
 
     <section class="Services">
-        <h1>OUR SERVICES</h1>
+        <h1><span>OUR SERVICES</span></h1>
         <p>Donec in dui hendrerit sem scelerisque luctus. Ut cursus, sem vel condimentum ultricies, mi massa cursus ipsum, non hendrerit lacus quam ut est</p>
         <div class="cards-container">
             <div class="cards">
-                <h1> Nescuint Mete</h1>
-                <hr>
-                <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
+                <i class="fa-solid fa-bolt"></i>
+                <h1> <span>Nescuint Mete</span></h1>
+                <div>
+                    <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
                 <br>
                 <a href="#">Read More</a>
+                </div>
             </div>
             <div class="cards">
-                <h1>Eosle Commodi</h1>
-                <hr>
-                <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
+                <i class="fa-solid fa-tower-broadcast"></i>
+                <h1><span>Eosle Commodi</span></h1>
+                <div>
+                    <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
                 <br>
                 <a href="#">Read More</a>
+                </div>
             </div>
             <div class="cards">
-                <h1>Ledo Markt</h1>
-                <hr>
-                <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
+                <i class="fa-solid fa-chalkboard"></i>
+                <h1><span>Ledo Markt</span></h1>
+                <div>
+                    <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
                 <br>
                 <a href="#">Read More</a>
+                </div>
             </div>
             <div class="cards">
-                <h1>Asperiores Commodit</h1>
-                <hr>
-                <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
+                <i class="fa-solid fa-vector-square"></i>
+                <h1><span>Asperiores Commodit</span></h1>
+                <div>
+                    <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
                 <br>
                 <a href="#">Read More</a>
+                </div>
             </div>
             <div class="cards">
-                <h1>Velit Doloremque</h1>
-                <hr>
-                <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
+                <i class="fa-solid fa-calendar-days"></i>
+                <h1><span>Velit Doloremque</span></h1>
+                <div>
+                    <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
                 <br>
                 <a href="#">Read More</a>
+                </div>
             </div>
             <div class="cards">
-                <h1>Dolori Architecto</h1>
-                <hr>
-                <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
+                <i class="fa-regular fa-message"></i>
+                <h1><span>Dolori Architecto</span></h1>
+                <div>
+                    <span>Aliquam sit amet elit at felis lacinia egestas eget eu tellus. <br> Etiam sed lacus ac metus blandit tincidunt vel vel urna. <br> Phasellus blandit turpis massa, sed lobortis ligula bibendum at.</span>
                 <br>
                 <a href="#">Read More</a>
+                </div>
             </div>
         </div>
     </section>
@@ -179,7 +219,7 @@
         <div class="testimony">
             <div class="cardstestimony">
                 <div class="img-name">
-                    <img src="images/testimonials-4.jpg" alt="testimony-1">
+                    <img src="images/testimonials/testimonials-4.jpg" alt="testimony-1">
                     <h1>Matt Brandon</h1>
                 </div>
                 <div class="comment">
@@ -188,7 +228,7 @@
             </div>
             <div class="cardstestimony">
                 <div class="img-name">
-                    <img src="images/testimonials-1.jpg" alt="testimony-2">
+                    <img src="images/testimonials/testimonials-5.jpg" alt="testimony-2">
                     <h1>John Larson</h1>
                 </div>
                 <div class="comment">
@@ -197,7 +237,7 @@
             </div>
             <div class="cardstestimony">
                 <div class="img-name">
-                    <img src="images/testimonials-5.jpg" alt="testimony-3">
+                    <img src="images/testimonials/testimonials-1.jpg" alt="testimony-3">
                     <h1>Saul Goodman</h1>
                 </div>
                 <div class="comment">
@@ -207,26 +247,320 @@
         </div>
     </section>
 
+    <section class="Portfolio">
+        <h1>Portfolio</h1>
+        <p>Proin posuere eros nulla. In auctor, magna eu imperdiet dictum, purus mi rhoncus ligula, sit amet placerat neque nisi nec nisl. Aenean nec laoreet sem, id eleifend est.</p>
+        <div class="link">
+            <a href="">All</a>
+            <a href="">App</a>
+            <a href="">Product</a>
+            <a href="">Branding</a>
+            <a href="">Books</a>
+        </div>
+        <div class="product-container">
+            <div class="products app">
+                <img src="images/portfolio/app-1.jpg" alt="app-1">
+                <div>
+                    <h1>App 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>      
+            </div>
+            <div class="products product">
+                <img src="images/portfolio/product-1.jpg" alt="product-1">
+                <div>
+                    <h1>Product 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="products branding">
+                <img src="images/portfolio/branding-1.jpg" alt="branding-1">
+                <div>
+                    <h1>Branding 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="products app">
+                <img src="images/portfolio/app-2.jpg" alt="app-2">
+                <div>
+                    <h1>App 2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="products product">
+                <img src="images/portfolio/product-2.jpg" alt="product-2">
+                <div>
+                    <h1>Product 2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="products books">
+                <img src="images/portfolio/books-1.jpg" alt="book-1">
+                <div>
+                    <h1>Book 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="products app">
+                <img src="images/portfolio/app-3.jpg" alt="app-3">
+                <div>
+                    <h1>App 3</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="products branding">
+                <img src="images/portfolio/branding-2.jpg" alt="branding-2">
+                <div>
+                    <h1>Branding 2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="products books">
+                <img src="images/portfolio/books-2.jpg" alt="book-2">
+                <div>
+                    <h1>Book 2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="products product">
+                <img src="images/portfolio/product-3.jpg" alt="product-3">
+                <div>
+                    <h1>Product 3</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="products branding">
+                <img src="images/portfolio/branding-3.jpg" alt="branding-3">
+                <div>
+                    <h1>Branding 3</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="products books">
+                <img src="images/portfolio/books-3.jpg" alt="book-3">
+                <div>
+                    <h1>Book 3</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Team">
+        <h1>Our Team</h1>
+        <p>Nulla tincidunt iaculis dictum. Duis posuere vestibulum pulvinar. Vivamus id quam lorem. Nullam in convallis urna. Ut luctus nulla erat, in lobortis justo accumsan a. </p>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/team/team-1.jpg" alt="member-1">
+                <div class="member-details">
+                    <h1>Walter White</h1>
+                    <span>Web Development</span>
+                </div>
+                <div class="social-links">
+                    <i class="fa-brands fa-twitter" ></i>
+                    <i class="fa-brands fa-facebook" ></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin" ></i>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="images/team/team-2.jpg" alt="member-2">
+                <div class="member-details">
+                    <h1>Sarah Jhinson</h1>
+                    <span>Marketing</span>
+                </div>
+                <div class="social-links">
+                    <i class="fa-brands fa-twitter" ></i>
+                    <i class="fa-brands fa-facebook" ></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin" ></i>
+                </div>
+            </div>
+            
+            
+                <div class="team-member">
+                    <img src="images/team/team-3.jpg" alt="member-3">
+                    <div class="member-details">
+                        <h1>William Anderson</h1>
+                        <span>Content</span>
+                    </div>
+                    <div class="social-links">
+                        <i class="fa-brands fa-twitter" ></i>
+                        <i class="fa-brands fa-facebook" ></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin" ></i>
+                    </div>
+                </div>
+            
+            
+                <div class="team-member">
+                    <img src="images/team/team-4.jpg" alt="member-4">
+                    <div class="member-details">
+                        <h1>Amanda Jepson</h1>
+                        <span>Accountant</span>
+                    </div>
+                   
+                    <div class="social-links">
+                        <i class="fa-brands fa-twitter" ></i>
+                        <i class="fa-brands fa-facebook" ></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin" ></i>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <section class="Pricing">
+        <h1>Pricing</h1>
+        <span>Proin vehicula consectetur augue eget scelerisque. Quisque orci neque, elementum a odio volutpat, malesuada lobortis massa.</span>
+        <div class="price-container">
+            <div class="pricing1">
+                <h2>Free Plan</h2>
+                <i class="fa-regular fa-cube" style="color: #fafafa;"></i>
+                <span class="orange">$0</span><span>/month</span>
+                <div class="price-details">
+                    <div>
+                        <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                        <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    </div>
+                    
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <i class="fa-regular fa-x" style="color: #c7c7c7;"></i>
+                    <span class="overline">Mauris nisi orci, feugiat eu magna vitae,</span>
+                    <i class="fa-regular fa-x" style="color: #c7c7c7;"></i>
+                    <span class="overline">Mauris nisi orci, feugiat eu magna vitae,</span>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="pricing2">
+                <h2>Business Plan</h2>
+                <i class="fa-regular fa-cube" style="color: #fafafa;"></i>
+                <span class="orange">$29</span><span>/month</span>
+                <div class="price-details">
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="pricing3">
+                <h2>Developer Plan</h2>
+                <i class="fa-regular fa-cube" style="color: #fafafa;"></i>
+                <span class="orange">$49</span><span>/month</span>
+                <div class="price-details">
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                    <i class="fa-duotone fa-check" style="--fa-primary-color: #109e3a; --fa-secondary-color: #467ddd;"></i>
+                    <span>Proin vehicula consectetur augue eget scelerisque. </span>
+                </div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="Questions">
+        <div>
+            <h1>Frequently Asked <br><span>Questions</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet tellus tortor. <br>
+                Phasellus elit nibh, eleifend eget massa vitae, scelerisque luctus augue. Proin vehicula <br> consectetur augue eget scelerisque. Quisque orci neque, elementum a odio volutpat, <br> malesuada lobortis massa. <br> Mauris fermentum quam ac orci porta faucibus. </p>
+        </div>
+        <div>
+            <div class="question-content">
+                <button>
+                    <div><span>1. </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                    <i class="fa-solid fa-angle-down" style="color: #787c82;"></i>
+                </button>
+                <div class="answer">
+                    Nulla tincidunt iaculis dictum. Duis posuere vestibulum pulvinar. Vivamus id quam lorem. Nullam in convallis urna. Ut luctus nulla erat
+                </div>
+            </div>
+            <div class="question-content">
+                <button>
+                    <div><span>2. </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                    <i class="fa-solid fa-angle-down" style="color: #787c82;"></i>
+                </button>
+                <div class="answer">
+                    Nulla tincidunt iaculis dictum. Duis posuere vestibulum pulvinar. Vivamus id quam lorem. Nullam in convallis urna. Ut luctus nulla erat
+                </div>
+            </div>
+            <div class="question-content">
+                <button>
+                    <div><span>3. </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                    <i class="fa-solid fa-angle-down" style="color: #787c82;"></i>
+                </button>
+                <div class="answer">
+                    Nulla tincidunt iaculis dictum. Duis posuere vestibulum pulvinar. Vivamus id quam lorem. Nullam in convallis urna. Ut luctus nulla erat
+                </div>
+            </div>
+            <div class="question-content">
+                <button>
+                    <div><span>4. </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                    <i class="fa-solid fa-angle-down" style="color: #787c82;"></i>
+                </button>
+                <div class="answer">
+                    Nulla tincidunt iaculis dictum. Duis posuere vestibulum pulvinar. Vivamus id quam lorem. Nullam in convallis urna. Ut luctus nulla erat
+                </div>
+            </div>
+            <div class="question-content">
+                <button>
+                    <div><span>5. </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                    <i class="fa-solid fa-angle-down" style="color: #787c82;"></i>
+                </button>
+                <div class="answer">
+                    Nulla tincidunt iaculis dictum. Duis posuere vestibulum pulvinar. Vivamus id quam lorem. Nullam in convallis urna. Ut luctus nulla erat
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="contacts">
         <h1>Contact</h1>
         <p>Curabitur convallis dolor est, volutpat commodo lorem accumsan eget. Ut a ultricies erat. Donec vitae tortor accumsan, rhoncus lorem eget, blandit dolor.</p>
         <div class="contact-section"> 
             <div class="contact-details">
                 <div>
-                    <h1>Location:</h1>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <i class="fa-light fa-location-dot" style="color: white;"></i>
+                    <div>
+                        <h1>Location:</h1>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
                 </div>
                 <div>
-                    <h1>Email:</h1>
-                    <p>info@example.com</p>
+                    <i class="fa-light fa-envelope"></i>
+                    <div>
+                        <h1>Email:</h1>
+                        <p>info@example.com</p>
+                    </div>
                 </div>
                 <div>
-                    <h1>Call</h1>
-                    <p>+1 558955488 55</p>
+                    <div>
+                        <h1>Call</h1>
+                        <p>+1 558955488 55</p>
+                    </div>
                 </div>
                 <div>
-                    <h1>Open Hours:</h1>
-                    <p>Mon-Sat: 11AM - 23PM</p>
+                    <div>
+                        <h1>Open Hours:</h1>
+                        <p>Mon-Sat: 11AM - 23PM</p>
+                    </div>
                 </div>
             </div>
             <form action="" class="contact-form">
@@ -234,12 +568,59 @@
                     <input type="text" placeholder="Your Name">
                     <input type="email" placeholder="Your Email">
                 </div>
-                <input type="text" placeholder="Subject">
+                <input class="subject" type="text" placeholder="Subject">
                 <textarea name="Message" placeholder="Message" id="" cols="30" rows="10"></textarea>
-                <input type="button" value="Send">
+                <input type="button" value="Send Message">
             </form>
         </div>
-        
+    </section>
+    
+    <!-- Completed CSS and HTML -->
+    <section class="more-links">
+        <div class="more-links1">
+            <div class="more-about">
+                <h1>LOREM_IMSUM</h1>
+                <p>Donec tristique dolor quam, in varius ligula auctor at. Sed scelerisque nunc <br> nec turpis ultrices dignissim. Ut pulvinar ultrices nunc,  non tempor nisi <br> bibendum sed. Duis non libero eros. Pellentesque tempor fermentum efficitur. </p>
+                <div class="icons">
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #fcfcfc;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #fcfcfd;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: #f2f2f3;"></i>
+                </div>    
+            </div>
+            <div class="useful-links">
+                <h1>Useful Links</h1>
+                <div>
+                    <span>Home</span>
+                    <span>About us</span>
+                    <span>Services</span>
+                    <span>Terms of service</span>
+                    <span>Privacy policy</span>
+                </div>
+            </div>
+            <div class="more-services">
+                <h1>Our Services</h1>
+                <div>
+                    <span>Web Design</span>
+                    <span>Web Development</span>
+                    <span>Product Management</span>
+                    <span>Marketing</span>
+                    <span>Graphic Design</span>
+                </div>
+            </div>
+            <div class="more-contact">
+                <h1>Contact Us</h1>
+                <div>
+                    <span>A108 Adam Street <br>New York, NY 535022 <br>United States</span>
+                    <span class="highlight">Phone: <span>+1 5589 55488 55</span></span>
+                    <span class="highlight">Email: <span>info@example.com</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <span>Copyright <span>LOREM_IMSUM</span>. All Rights Reserved</span>
+            <span>Designed by rushil</span>
+        </div>
     </section>
 
 </body>
